@@ -3,9 +3,10 @@
 
 使用示例
 
-<a href="#" download="交易记录.xls"class="to_excel fjgl_top_r_05">导出</a>
+<p><code><a href="#" download="交易记录.xls"class="to_excel fjgl_top_r_05">导出</a></code></p>
 
-$(".to_excel").click(function(event){
+
+<p><code>$(".to_excel").click(function(event){
 	var t = Itable2excel({
 		worksheet:'数据分析',
 		table: $('#order-list table')
@@ -14,4 +15,5 @@ $(".to_excel").click(function(event){
 	if(data64==false)
 		return false;
 	event.currentTarget.href = data64;
-});
+});</code></p>
+
